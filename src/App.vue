@@ -1,20 +1,19 @@
 <template>
   <div id="app">
     <div id="nav">
+      <img alt="BeerLogo" src="./assets/BeerLogo1.png" /> <br />
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/beers">Beers</router-link>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Roboto, sans-serif;
   text-align: center;
-  color: #2c3e50;
+  color: #a96d27;
 }
 
 #nav {
@@ -23,10 +22,10 @@
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #a96d27;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #ac8d69;
 }
 </style>

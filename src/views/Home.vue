@@ -1,18 +1,25 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <b-container class="home">
+    <yourName msg="Vänligen fyll i ditt namn i fältet" />
+
+    <oneBeer />
+  </b-container>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+
+import yourName from "@/components/yourName.vue";
+import OneBeer from "@/components/oneBeer.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    HelloWorld
-  }
-}
+    yourName,
+    OneBeer,
+  },
+};
 </script>
+
+
+
